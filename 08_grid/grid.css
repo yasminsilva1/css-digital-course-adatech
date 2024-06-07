@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto Mono", monospace;
+	font-size: 1.8rem;
+}
+
+.boxes {
+	height: calc(100vh);
+	position: relative;
+
+	display: grid;
+	justify-content: flex-start;
+
+	gap: 1rem 5rem;
+	/* row-gap: 1rem; */
+	/* column-gap: 5rem; */
+
+	/* grid-template-columns: 3fr 1fr 1fr 1fr; */
+	grid-template-columns: 3fr repeat(3, 1fr);
+	/* grid-template-rows: 2fr; */
+}
+
+.box {
+	padding: 1.5rem;
+	border: 1rem solid red;
+	border-radius: 0.4rem;
+	background-color: blue;
+	color: #fff;
+	text-align: center;
+}
+
+.box p {
+	font-size: 4rem;
+}
